@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<title>Skatteberegner</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	
+	<div class="container">
+	
+		<h1>Skatteberegner</h1>
+		
+		<div class="row margin_top">
+			
+			<div class="col-md-12">
+				
+				<form method="post" action="">
+				
+					<label>Fornavn</label>
+					<input type="text" class="form-control big1Letter" id="fornavn" name="fornavn">
+					<label id="msg_fornavn" class="errorMsg">Udfyld venligst dit fornavn!</label>
+
+					<label class="margin_top">Efternavn</label>
+					<input type="text" class="form-control big1Letter" id="efternavn" name="efternavn" required>
+					<label id="msg_efternavn" class="errorMsg">Udfyld venligst dit efternavn!</label>
+
+					<label class="margin_top">Månedsløn</label>
+					<input type="number" class="form-control big1Letter" id="lon" name="lon" required>
+					<label id="msg_lon" class="errorMsg">Udfyld venligst din månedsløn!</label>
+
+					<label class="margin_top">Region</label>
+					<select class="browser-default custom-select" id="region" name="region" required>
+						<option value="Vælg Region">Vælg Region</option>
+						<option value="Nordjylland">Nordjylland</option>
+						<option value="Midtjylland">Midtjylland</option>
+						<option value="Syddanmark">Syddanmark</option>
+						<option value="Sjælland">Sjælland</option>
+						<option value="Hovedstaden">Hovedstaden</option>
+					</select>
+					<label id="msg_region" class="errorMsg">Vælg venligst din region!</label>
+
+					<input type="button" class="btn btn-dark margin_top" value="Beregn" id="btn_cal">
+					
+				</form>
+				
+			</div><!-- col-md-6 -->
+			
+		</div><!-- row -->
+		
+	</div><!-- container -->
+	
+	<div class="container_msg">
+		
+		<label id="msg"></label>
+		
+	</div><!-- container_msg -->
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="beregner.js" type="text/javascript"></script>
+	
+</body>
+</html>
